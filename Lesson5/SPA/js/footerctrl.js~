@@ -1,0 +1,12 @@
+FooterCtrl = function(footerView, store){
+	 store.on("addedToStore",function(id){
+		number = store.data.length;
+		footerView.changeNumber(number);
+	 });
+	 
+	 store.on("updated",function(id){
+		window.alert("footer ctrl");
+		number = store.active;
+		footerView.changeActiveNumber(number);
+	 });
+};

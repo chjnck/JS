@@ -1,0 +1,19 @@
+	body {
+
+    		margin-left: auto;
+    		margin-right: auto;
+   		width: 225pt;
+		background-color: #dfefff;
+	}
+
+  #header {
+       font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+       text-align: center;
+
+   }
+	[active = "0"]{
+	background-color: #dfefff;
+	}
+   	[active = "1"]{
+	background-color: #d0e4fe;
+	}

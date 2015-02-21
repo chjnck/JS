@@ -1,0 +1,38 @@
+window.addEventListener('DOMContentLoaded', function () {
+	//After the page structure is loaded
+
+	var store = new UAM.Store();
+
+	var inputView = new UAM.InputView(document.querySelector('#inputview'));
+	var listView = new UAM.ListView(document.querySelector('#listview'));
+	var footerView = new UAM.FooterView(document.querySelector('#footerview'));
+
+	new InputCtrl(inputView, store);
+	new ListCtrl(listView, store);
+	new FooterCtrl(footerView, store);
+
+	/*
+	var lastTaskId = 0;	
+		//input
+		var buttonAdd = document.querySelector('#content > #addnew > button');
+		buttonAdd.addEventListener('click', function () {
+		lastTaskId +=1;
+		//list view add element
+		var task = document.createElement('div');
+		var name = document.createElement('p');
+		//input view + logic przekaz tekst
+		name.textContent = document.querySelector('#content > #addnew > input').value;
+		
+		//list view add element(tekst)
+		task.appendChild(name);
+		task.setAttribute("id",lastTaskId)
+		task.setAttribute("active",0)
+		document.querySelector("#list").appendChild(task);
+		//list ctr 
+		task.addEventListener('click', function () {
+		//list view setactive(element)
+			this.setAttribute("active",(parseInt(this.getAttribute("active"))+1) % 2)
+		});	
+	});*/	
+
+});
